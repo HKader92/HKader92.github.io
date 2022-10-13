@@ -1,0 +1,134 @@
+body{
+background: #8E0E00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+p,h1,a,tbody, ul{
+  color: white;
+}
+.table{
+background: white
+}
+
+footer{
+   margin-top:50px;
+    width:100%;
+    height:200px;
+
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 100;
+    color: black;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+
+
+
+
+.box__footer h2{
+    margin-bottom: 30px;
+    font-weight: 70;
+    color: white;
+}
+
+}
+.box__footer a{
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: white;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Pr
+
+
+.contenedor .form {
+    background: rgba(0,0,0,6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius:
+
+
+}
+
+.contenedor .form .form-header .form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #ff851b;
+    text-align: center;
+    padding: 14px 0;
+
+}
+.contenedor .form .form-header .form-title span{
+    color: #fff;
+
+}
+
+.contenedor .form .form-label{
+    display: block;
+    color: #ff851b;
+    font-size: 16px;
+    font-family: roboto;
+    position: relative;
+
+}
+
+.contenedor .form .form-input, .form-textarea{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ff851b;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    margin-radius: 2px;
+    font-size: 14px;
+    color: #FFF;
+    font-family: Roboto;
+
+}

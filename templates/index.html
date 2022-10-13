@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+
+    <title>Suministros Informaticos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo1.png') }}">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous">
+    <link rel="shortcut icon" href="logo1.png">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-black">
+<img src="{{ url_for('static', filename='img/logo1.png') }}" width="115" height="100"/>
+    <nav class="navbar navbar-expand-lg bg-black">
+  <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/" style="color:white">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('producto') }}" style="color:white">Productos</a>
+        </li>
+       <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('proveedor') }}" style="color:white">proveedores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('asesoramiento') }}" style="color:white">Asesoramiento</a>
+                </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container py-3">
+    {% block content %}
+      {% endblock%}
+    </div>
+<article>
+<img src="{{ url_for('static', filename='img/imag.png') }}" align="right"/>
+
+<p>
+Los proyectos de renovación, ampliación o mejora de los equipos informáticos y
+    de impresión tienen un doble objetivo: incrementar la productividad con soluciones
+    que proporcionan mayor rendimiento, flexibilidad y movilidad y ahorrar con soluciones
+    más simples de administrar y gestionar.
+
+Nuestra filosofía se basa en encontrar la solución más adecuada a sus
+    necesidades y asegurar la calidad del servicio antes, durante y después
+    de la entrega, ofreciendo una atención personalizada a lo largo de todo el proceso.</p>
+
+<h1>Instalaciones y Suministros</h1>
+<p>Somos una empresa con amplia experiencia en todo tipo de instalaciones
+    y montajes de material informático y audiovisual. Tenemos una amplia
+    experiencia en la ejecución de todo tipo de instalaciones, teniendo
+    entre nuestros clientes a organismos públicos, centros de enseñanza,
+    empresas y profesionales</p>
+</article>
+<hr>
+
+    </div>
+  </div>
+</nav>
+
+ <footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="Images/logo-magtimus.png" alt="">
+                </div>
+                <div class="terms">
+                    <p>Aportamos nuestra experiencia a cada proyecto del cliente para asegurar
+                        las opciones de implementación más eficientes y seguras. Consúltanos para
+                        hablar de los requerimientos de tu empresa para alojar infraestructura IT
+                        y aportaremos la solución más adecuada para cada caso..</p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Soluciones</h2>
+                <a href="/">Home</a>
+                <a href="{{ url_for('producto') }}">Productos</a>
+                <a href="{{ url_for('proveedor') }}">Proveedores</a>
+                <a href="{{ url_for('asesoramiento') }}">Asesoramiento</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Contactanos</h2>
+                <p>Suministros Informaticos S.L</p>
+                <p>Calle Alahmbra, 100, 22005 Huesca</p>
+                <p>T.+34 902 917 058, info@suministrosinformaticos.com</p>
+                <p>CIF: B-15236452</p>
+            </div>
+
+            <div class="box__copyright">
+            <hr>
+                <br>
+            <p>La pagina esta hecha en el año © 2022 por <b>El Yagoubi AbdelKader</b></p>
+        </div>
+
+        </div></footer>
+</body>
+</html>
